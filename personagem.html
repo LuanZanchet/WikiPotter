@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Potter</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <nav id="nav" class="mb-4 navbar navbar-expand-lg navbar-light black lighten-4">
+        <!-- Navbar brand -->
+        <a class="navbar-brand font-bold text-white" href="index.html">Hogwarts</a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              
+                <li class="nav-item">
+                    <a class="nav-link font-bold text-white" onclick="selecionarCasa('Gryffindor')">Gryffindor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-bold text-white" onclick="selecionarCasa('Slytherin')">Slytherin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-bold text-white"  onclick="selecionarCasa('Ravenclaw')">Ravenclaw</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-bold text-white" onclick="selecionarCasa('Hufflepuff')">Hufflepuff</a>
+                </li>
+            </ul>
+            <!-- Links -->
+            <!-- Search form -->
+            <form class="form-inline md-form mb-0">
+                <i class="fa fa-search text-white" aria-hidden="true"></i>
+                <input class="form-control font-bold w-75 ml-3 white" type="text" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+    <div class="container-fluid" id="banner">
+				<div class="container text-center">
+                    <br/>
+                    <br/>
+                    <br/>
+					  <h1 class="text-white name" id="name">COLLEGE OF VETERINARY MEDICINE</h1>
+  					  <p class="text-white role" id="role">VSAS | VLVK</p>
+					 
+				
+			
+				</div>
+			</div>
+    <div class="container-fluid">   
+        <div class="card">
+          
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+               
+                <p>Species: <span id="species"></span> </p>
+                <p>order Of The Phoenix: <span id="orderOfThePhoenix"></span> </p>
+                <p>death Eater: <span id="deathEater"></span> </p>
+                <footer class="blockquote-footer"> <cite title="Source Title"> <p>School: <span id="school"></span> </p></cite></footer>
+              </blockquote>
+            </div>
+          </div> 
+    </div>
+</body>
+<script src="js/personagem.js"></script>
+</html>
